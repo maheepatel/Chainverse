@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="logo-container">
         <Avatar src={icon} size="large" />
         <Typography.Title level={2} className="logo">
-          <Link to="/">Blockverse</Link>
+          <Link to="/">Chainverse</Link>
         </Typography.Title>
         {/* <Butt className="menu-control-container"></Butt> */}
       </div>
