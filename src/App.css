@@ -2,7 +2,7 @@
   --text-primary: #000;
   --bgPrimary: #fff;
   --bgSecondary: #F9F9F9;
-  --pink: #0071bd;
+  --blue: #0071bd;
   --light-blue: #e6f7ff;
   --border: #d9d9d9;
 
@@ -12,7 +12,7 @@
   /* Wheat */
   /* --bgSecondary: #d2b48c; */
   /* Tan */
-  /* --pink: #ff4500; */
+  /* --blue: #ff4500; */
   /* Orange Red */
   /* --light-blue: #fafad2; */
   /* Light Goldenrod Yellow */
@@ -28,7 +28,7 @@
 }
 
 a:hover {
-  color: var(--pink) !important;
+  color: var(#000) !important;
 }
 
 .app {
@@ -172,7 +172,7 @@ a:hover {
 
 .coin-heading-container .coin-name {
   font-weight: 900;
-  color: var(--pink);
+  color: var(--blue);
 }
 
 .coin-heading-container p {
@@ -192,13 +192,13 @@ a:hover {
   font-weight: 700;
   font-size: 1.4rem;
   margin-top: 20px;
-  color: var(--pink);
+  color: var(--blue);
 }
 
 .coin-details-heading {
   font-weight: 700 !important;
   margin-top: 20px !important;
-  color: var(--pink) !important;
+  color: var(--blue) !important;
 }
 
 .coin-stats {
@@ -235,7 +235,7 @@ a:hover {
 
 .coin-desc-link h2 {
   font-weight: 700;
-  color: var(--pink);
+  color: var(--blue);
 }
 
 .coin-desc-link p {
@@ -244,7 +244,7 @@ a:hover {
 }
 
 .coin-desc-link a {
-  color: var(--pink);
+  color: var(--blue);
 }
 
 .coin-desc-link h3 {
@@ -274,7 +274,7 @@ a:hover {
 }
 
 .coin-link a {
-  color: var(--pink);
+  color: var(--blue);
   font-weight: 700;
   font-size: 1rem;
 }
@@ -407,6 +407,11 @@ a:hover {
 
 .crypto-card .crypto-image {
   width: 35px;
+}
+
+.crypto-image {
+  width: 30px;
+  height: 30px;
 }
 
 .select-timeperiod {
