@@ -324,11 +324,15 @@ a:hover {
 
 .news-image-container {
   display: flex !important;
+  height: 100%;
+
   justify-content: space-between !important;
+
 }
 
 .news-title {
   width: 70%;
+  font-weight: 1rem;
 }
 
 .news-image-container .img {
@@ -425,4 +429,28 @@ a:hover {
   flex-direction: column;
   padding: 20px;
   align-items: center;
+  /* position: fixed;
+  width: 100%;
+  bottom: 0; */
+}
+
+.crypto-news-logo {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+}
+
+.published-on {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  /* padding-top: 1rem; */
+}
+
+.published-on>span {
+  font: bold;
+  font-size: small;
+  font-weight: 400;
 }

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import millify from "millify";
 import { Link } from "react-router-dom";
 import { Card, Row, Col, Input } from "antd";
-import { useGetCryptosQuery } from "../Services/cryptoApi";
+import { useGetCryptosQuery } from "../services/cryptoApi";
 
 const Cryptocurrencies = ({ simplified }) => {
   const count = simplified ? 10 : 100;
@@ -10,7 +10,7 @@ const Cryptocurrencies = ({ simplified }) => {
   const [cryptos, setCryptos] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   // console.log(cryptos + "this");
-  console.log(cryptosList + "100 list");
+  // console.log(cryptosList + "100 list");
 
   useEffect(() => {
     // setCryptos(cryptosList?.data?.coins);
