@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Select, Typography, Row, Col, Avatar, Card } from "antd";
 import moment from "moment";
-import { useGetCryptosQuery } from "../services/cryptoApi";
-import { useGetCryptoNewsQuery } from "../services/cryptoNewsApi";
+import { useGetCryptosQuery } from "../Services/cryptoApi";
+import { useGetCryptoNewsQuery } from "../Services/cryptoNewsApi";
 import newsImg from "../assets/cryptodesk-logo.png";
 const demoImage =
   "https://www.freepik.com/free-photo/newspaper-background-concept_29016072.htm#query=crypto%20news&position=1&from_view=keyword&track=ais&uuid=b672851d-b215-47f1-840b-558c24db4a30";
@@ -22,7 +22,7 @@ const News = ({ simplified }) => {
     count: simplified ? 6 : 12,
   });
 
-  console.log(cryptoNews);
+  // console.log(cryptoNews);
 
   if (!cryptoNews) return "Loading ... ";
 
