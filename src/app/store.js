@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { cryptoApi } from "../services/cryptoApi";
-import { cryptoNewsApi } from "../services/cryptoNewsApi";
+import { cryptoApi } from "../Services/cryptoApi";
+import { cryptoNewsApi } from "../Services/cryptoNewsApi";
 // import { setupListeners } from "@reduxjs/toolkit/query/react";
 export default configureStore({
   reducer: {

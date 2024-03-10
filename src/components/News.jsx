@@ -4,6 +4,7 @@ import moment from "moment";
 import { useGetCryptosQuery } from "../Services/cryptoApi";
 import { useGetCryptoNewsQuery } from "../Services/cryptoNewsApi";
 import newsImg from "../assets/cryptodesk-logo.png";
+import Loader from "./Loader";
 const demoImage =
   "https://www.freepik.com/free-photo/newspaper-background-concept_29016072.htm#query=crypto%20news&position=1&from_view=keyword&track=ais&uuid=b672851d-b215-47f1-840b-558c24db4a30";
 // ("https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News");
@@ -22,11 +23,9 @@ const News = ({ simplified }) => {
     count: simplified ? 6 : 12,
   });
 
- 
-
   // console.log(cryptoNews);
 
-  if (!cryptoNews) return "Loading ... ";
+  if (!cryptoNews) return <Loader />;
 
   return (
     <Row gutter={[24, 24]}>
